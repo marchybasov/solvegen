@@ -8,6 +8,15 @@
 }
 
 @font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../fonts/HelveticaNeue.woff') format('woff');
+  src: url('../fonts/HelveticaNeue.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
   font-family: 'Segoe';
   src: url('../fonts/Segoe.woff') format('woff');
   font-weight: normal;
@@ -3391,6 +3400,8 @@ footer, header, menu, nav, output {
 /******my page*****/
 
 .main-top {
+  min-width: 580px;
+  overflow: scroll;
   &__goods {
     display: block;
     background: url("../img/my_page/bg.png") #138b89;
@@ -3627,6 +3638,22 @@ footer, header, menu, nav, output {
       }
     }
   }
+  .ing-slider {
+    display: block;
+    @media screen and (max-width: 1380px) {
+      & {
+        display: none;
+      }
+    }
+  }
+  .ing-slider2 {
+    display: none;
+    @media screen and (max-width: 1380px) {
+      & {
+        display: block;
+      }
+    }
+  }
   &__ingredients {
     text-align: center;
     width: 100%;
@@ -3714,7 +3741,224 @@ footer, header, menu, nav, output {
   }
 }
 
-.ing-slider_active {
+.main-top .main-middle {
+  display: inline-block;
+  width: 100%;
+  height: 468px;
+  margin: 0 auto;
+  @media screen and (max-width: 1380px) {
+    & {
+      height: auto;
+      max-height: 800px;
+
+    }
+  }
+
+  &__pic {
+    display: inline-block;
+    width: 50%;
+    height: 468px;
+    margin: 0 auto;
+    @media screen and (max-width: 1380px) {
+      & {
+        display: block;
+        margin: 0 auto;
+        height: auto;
+        max-height: 468px;
+      }
+    }
+    img{
+      margin-left: 10%;
+      vertical-align: bottom;
+      @media screen and (max-width: 1380px) {
+        & {
+
+          margin: 0 auto;
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+
+  }
+  &__switcher {
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+    vertical-align: bottom;
+    @media screen and (max-width: 1380px) {
+      & {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        height: auto;
+      }
+    }
+    &-sizeBtn {
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      margin-top: 10%;
+
+      .active {
+        opacity: 1;
+        outline: none;
+      }
+      &--item {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        background: transparent;
+        border-color: transparent;
+        opacity: 0.5;
+
+        &:hover {
+          outline: auto;
+          opacity: 0.8;
+        }
+        &:focus{
+          outline: none;
+        }
+        .size {
+          display: inline-block;
+          width: 100%;
+          height: 35px;
+          font-family: HelveticaNeue, sans-serif;
+          color: #000000;
+          font-size: 30px;
+          font-weight: 700;
+
+        }
+        .description {
+          font-family: ArialNarrow, sans-serif;
+          display: inline-block;
+          width: 100%;
+          height: 20px;
+          color: #000000;
+          font-size: 8.7px;
+          font-weight: 700;
+          text-transform: uppercase;
+
+        }
+      }
+    }
+    &-selectAmount {
+      margin: 3% 3% 0 0;
+      &--item {
+        font-family: Lato, sans-serif;
+        color: #000101;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        display: inline-block;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #dcdbda;
+        background-color: #ffffff;
+        width: 68px;
+        height: 40px;
+        text-align-last: center;
+      }
+      &--box {
+        display: inline-block;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #dcdbda;
+        background-color: #ffffff;
+        width: 139px;
+        height: 40px;
+        font-family: Lato, sans-serif;
+        color: #000101;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align-last: center;
+      }
+    }
+    &-price {
+      display: inline-block;
+      width: 100%;
+      margin-top: 8%;
+      margin-left: 3%;
+      &--through {
+        display: inline;
+        color: #c0c0c0;
+        text-decoration: line-through;
+        margin-right: 8px;
+        font-family: Lato, sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: center;
+        @media screen and (max-width: 1380px) {
+          & {
+            display: block;
+          }
+        }
+      }
+      &--new {
+        display: inline;
+        font-family: Lato, sans-serif;
+        color: #e2623f;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 30px;
+        @media screen and (max-width: 1380px) {
+          & {
+            display: block;
+          }
+        }
+      }
+      &--reg {
+        display: inline-block;
+
+        font-family: Lato, sans-serif;
+        color: #000000;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 18px;
+        text-align: left;
+        @media screen and (max-width: 1380px) {
+          & {
+            display: block;
+            text-align: center;
+          }
+        }
+      }
+
+    }
+    &--buyBtn {
+      width: 193px;
+      height: 60px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      border: 2px solid #d05331;
+      background: #e2623f;
+      color: #fff;
+      text-transform: uppercase;
+      font-family: Lato, Arial;
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 56px;
+      text-align: center;
+      display: block;
+      margin: 10% 0 0 0;
+      border-radius: 30px;
+      &:hover {
+        background: darken(#e2623f, 5);
+      }
+      @media screen and (max-width: 1380px) {
+        & {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+}
+
+.ing-slider2 {
   display: inline-block;
   width: 260px;
   height: 230px;
