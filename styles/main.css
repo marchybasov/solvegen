@@ -7,8 +7,8 @@
   src: url("../fonts/Lao_UI.ttf"); }
 @font-face {
   font-family: 'HelveticaNeue';
-  src: url("../fonts/HelveticaNeue.woff") format("woff");
-  src: url("../fonts/HelveticaNeue.woff2") format("woff2");
+  src: url("../fonts/HelveticaNeue-CondensedBold.woff") format("woff");
+  src: url("../fonts/HelveticaNeue-CondensedBold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal; }
 @font-face {
@@ -4366,7 +4366,7 @@ footer, header, menu, nav, output {
       #profile_order_list .profile-content .order-list-footer button {
         margin-top: 15px;
         border: 2px solid #E1E1E1;
-        font-family: Lato,sans-serif;
+        font-family: Lato, sans-serif;
         width: 135px;
         border-radius: 40px;
         min-height: 46px;
@@ -4382,7 +4382,7 @@ footer, header, menu, nav, output {
       padding: 0;
       margin-top: 51px; }
     #profile_order_list .profile-content .profile-tabs .profile-tab {
-      font-family: Lato,sans-serif;
+      font-family: Lato, sans-serif;
       width: 128px;
       border-radius: 40px;
       min-height: 46px;
@@ -4806,7 +4806,7 @@ footer, header, menu, nav, output {
 
 /***** login page ****/
 #authorization {
-  min-height: calc( 100vh - 62px );
+  min-height: calc(100vh - 62px);
   width: 100%;
   margin-top: -20px;
   background-color: #f1bb00;
@@ -5032,7 +5032,7 @@ footer, header, menu, nav, output {
 /***** wholesale page end*****/
 /***** page password forget*****/
 #forgot_password {
-  min-height: calc( 100vh - 62px );
+  min-height: calc(100vh - 62px);
   width: 100%;
   margin-top: -20px;
   background-color: #f1bb00;
@@ -5156,7 +5156,7 @@ footer, header, menu, nav, output {
 /***** page password forget end*****/
 /***** page password forget*****/
 #new_password {
-  min-height: calc( 100vh - 62px );
+  min-height: calc(100vh - 62px);
   width: 100%;
   margin-top: -20px;
   background-color: #f1bb00;
@@ -5281,7 +5281,7 @@ footer, header, menu, nav, output {
 /***** page password forget end*****/
 /***** page password changed*****/
 #password_changed {
-  min-height: calc( 100vh - 62px );
+  min-height: calc(100vh - 62px);
   width: 100%;
   max-width: 1200px;
   margin-top: -20px;
@@ -5743,7 +5743,7 @@ footer, header, menu, nav, output {
 .catalog-title {
   margin-top: 0;
   color: #333333;
-  font-family: Lato,sans-serif;
+  font-family: Lato, sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 60px; }
@@ -5754,14 +5754,14 @@ footer, header, menu, nav, output {
   margin-top: 15px;
   margin-bottom: 20px;
   color: #333333;
-  font-family: Lato,sans-serif;
+  font-family: Lato, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px; }
 
 .catalog-description_2 {
   color: #333333;
-  font-family: Lato,sans-serif;
+  font-family: Lato, sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
@@ -5801,23 +5801,24 @@ footer, header, menu, nav, output {
         padding-top: 4%; } }
     .main-top__goods-left img {
       margin-top: 27px;
-      margin-left: 178px; }
+      margin-left: 183px; }
       @media screen and (max-width: 1900px) {
         .main-top__goods-left img {
-          margin-top: 5%;
-          margin-left: 4%; } }
+          margin-top: 26px;
+          margin-left: 23px; } }
       @media screen and (max-width: 1380px) {
         .main-top__goods-left img {
           margin: 0 auto; } }
     .main-top__goods-left-pic {
       list-style: none;
-      margin-top: -3px;
-      margin-left: 380px;
+      margin-top: -2px;
+      margin-left: 378px;
       padding: 0;
       text-align: left; }
       @media screen and (max-width: 1900px) {
         .main-top__goods-left-pic {
-          margin-left: 17%; } }
+          margin-left: 206px;
+          margin-top: -4px; } }
       @media screen and (max-width: 1380px) {
         .main-top__goods-left-pic {
           margin-left: 0; } }
@@ -5845,12 +5846,13 @@ footer, header, menu, nav, output {
       line-height: 18px;
       text-align: left;
       list-style: none;
-      margin-left: 301px;
+      margin-left: 299px;
       margin-top: 11px;
       padding: 0; }
       @media screen and (max-width: 1900px) {
         .main-top__goods-left-adv {
-          margin-left: 12%; } }
+          margin-left: 129px;
+          letter-spacing: 0.65px; } }
       @media screen and (max-width: 1380px) {
         .main-top__goods-left-adv {
           margin-left: 0; } }
@@ -5859,9 +5861,17 @@ footer, header, menu, nav, output {
         text-transform: uppercase; }
         .main-top__goods-left-adv li:nth-of-type(2) {
           margin-left: 5px; }
+          @media screen and (max-width: 1900px) {
+            .main-top__goods-left-adv li:nth-of-type(2) {
+              margin-left: -3px;
+              letter-spacing: 0.6px; } }
         .main-top__goods-left-adv li:nth-of-type(3) {
           margin-left: 3px;
           letter-spacing: 0.5px; }
+          @media screen and (max-width: 1900px) {
+            .main-top__goods-left-adv li:nth-of-type(3) {
+              margin-left: -1px;
+              letter-spacing: 0.5px; } }
         .main-top__goods-left-adv li:nth-of-type(4) {
           margin-left: -2px;
           letter-spacing: 0.5px; }
@@ -5877,7 +5887,7 @@ footer, header, menu, nav, output {
     display: inline-block;
     text-align: center;
     vertical-align: top;
-    padding-left: 2.5%;
+    padding-left: 50px;
     overflow: hidden; }
     @media screen and (max-width: 1900px) {
       .main-top__goods-right {
@@ -5897,6 +5907,11 @@ footer, header, menu, nav, output {
       text-align: left;
       margin-top: 130px;
       letter-spacing: 0.3px; }
+      @media screen and (max-width: 1900px) {
+        .main-top__goods-right-title {
+          margin-top: 94px;
+          letter-spacing: 0.2px;
+          margin-left: 14px; } }
       @media screen and (max-width: 1380px) {
         .main-top__goods-right-title {
           color: #282828; } }
@@ -5931,66 +5946,78 @@ footer, header, menu, nav, output {
             text-align: left;
             transform: scaleX(1.0004);
             text-transform: none; }
-  .main-top__goods h3 {
-    font-family: 'Segoe', sans-serif;
-    color: #abf2f1;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-    margin-top: 13px;
-    letter-spacing: 0.5px; }
-  .main-top__goods p {
-    font-family: Lato, sans-serif;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 30px;
-    text-align: left;
-    margin-top: 31px;
-    margin-left: 2px;
-    letter-spacing: 0.16px; }
-    @media screen and (max-width: 1380px) {
-      .main-top__goods p {
-        color: #282828; } }
-  .main-top__goods p:last-of-type {
-    display: inline-block;
-    width: 100%;
-    margin-top: 55px;
-    margin-left: 2px; }
-    @media screen and (max-width: 1380px) {
-      .main-top__goods p:last-of-type {
-        display: none; } }
-    .main-top__goods p:last-of-type span {
-      display: inline-block;
-      border-width: 2px;
-      border-color: #ffffff;
-      border-style: dashed;
-      opacity: 0.79;
-      width: 191px;
-      height: 60px;
-      border-radius: 30px;
-      text-align: center;
-      vertical-align: middle;
+    .main-top__goods-right h3 {
       font-family: 'Segoe', sans-serif;
+      color: #abf2f1;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      margin-top: 13px;
+      letter-spacing: 0.5px; }
+      @media screen and (max-width: 1900px) {
+        .main-top__goods-right h3 {
+          margin-top: 12px;
+          letter-spacing: 0.5px;
+          margin-left: 13px; } }
+    .main-top__goods-right p {
+      font-family: Lato, sans-serif;
       color: #ffffff;
       font-size: 18px;
-      font-weight: 400;
-      letter-spacing: 0.18px;
-      line-height: 20px;
-      padding-top: 16px; }
-.main-top .ing-slider {
-  display: block; }
-  @media screen and (max-width: 1380px) {
-    .main-top .ing-slider {
-      display: none; } }
+      font-weight: 300;
+      line-height: 30px;
+      text-align: left;
+      margin-top: 31px;
+      margin-left: 2px;
+      letter-spacing: 0.16px; }
+      @media screen and (max-width: 1900px) {
+        .main-top__goods-right p {
+          margin-top: 31px;
+          margin-left: 16px;
+          letter-spacing: 0.36px;
+          padding-right: 48px; } }
+      @media screen and (max-width: 1900px) {
+        .main-top__goods-right p br {
+          display: none; } }
+      @media screen and (max-width: 1380px) {
+        .main-top__goods-right p br {
+          color: #282828; } }
+    .main-top__goods-right p:last-of-type {
+      display: inline-block;
+      width: 100%;
+      margin-top: 55px;
+      margin-left: 2px; }
+      @media screen and (max-width: 1900px) {
+        .main-top__goods-right p:last-of-type {
+          margin-top: 65px;
+          margin-left: 15px; } }
+      @media screen and (max-width: 1380px) {
+        .main-top__goods-right p:last-of-type {
+          display: none; } }
+      .main-top__goods-right p:last-of-type span {
+        display: inline-block;
+        border-width: 2px;
+        border-color: #ffffff;
+        border-style: dashed;
+        opacity: 0.79;
+        width: 191px;
+        height: 60px;
+        border-radius: 30px;
+        text-align: center;
+        vertical-align: middle;
+        font-family: 'Segoe', sans-serif;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0.18px;
+        line-height: 20px;
+        padding-top: 16px; }
 .main-top .ing-slider2 {
   display: none; }
   @media screen and (max-width: 1380px) {
     .main-top .ing-slider2 {
       display: block; } }
 .main-top__ingredients {
-  text-align: center;
   width: 100%; }
   .main-top__ingredients .title {
     font-family: 'Segoe', sans-serif;
@@ -6001,7 +6028,20 @@ footer, header, menu, nav, output {
     line-height: 30px;
     text-align: left;
     margin-top: 97px;
-    margin-left: 569px; }
+    margin-left: 567px; }
+    @media screen and (max-width: 1900px) {
+      .main-top__ingredients .title {
+        display: none; } }
+    .main-top__ingredients .title_1400 {
+      display: none; }
+      @media screen and (max-width: 1900px) {
+        .main-top__ingredients .title_1400 {
+          margin-top: 96px;
+          margin-left: 145px;
+          display: inline-block;
+          text-align: left;
+          width: 1000px;
+          letter-spacing: -0.4px; } }
   .main-top__ingredients .sub_title {
     font-family: Lato, sans-serif;
     color: #000000;
@@ -6010,50 +6050,39 @@ footer, header, menu, nav, output {
     line-height: 18px;
     text-align: left;
     margin-top: 20px;
-    margin-left: 649px;
+    margin-left: 647px;
     letter-spacing: 0.35px; }
+    @media screen and (max-width: 1900px) {
+      .main-top__ingredients .sub_title {
+        display: none; } }
+    .main-top__ingredients .sub_title_1400 {
+      display: none; }
+      @media screen and (max-width: 1900px) {
+        .main-top__ingredients .sub_title_1400 {
+          margin-top: 20px;
+          margin-left: 471px;
+          display: inline-block; } }
+  .main-top__ingredients .ing-slider {
+    margin-top: 38px;
+    margin-left: 441px; }
+    @media screen and (max-width: 1380px) {
+      .main-top__ingredients .ing-slider {
+        display: none; } }
   .main-top__ingredients-pic {
     display: inline-block;
     width: 257px;
     height: 230px;
     text-align: center; }
+    .main-top__ingredients-pic:nth-of-type(2) {
+      margin-left: 29px; }
+    .main-top__ingredients-pic:nth-of-type(3) {
+      margin-left: 26px; }
     @media screen and (max-width: 1380px) {
       .main-top__ingredients-pic {
         display: block;
         margin: 0 auto; } }
     .main-top__ingredients-pic img {
       margin: 0 auto; }
-    .main-top__ingredients-pic:last-of-type {
-      display: block;
-      margin: 0 auto; }
-    .main-top__ingredients-pic p {
-      display: inline-block;
-      width: 100%;
-      text-transform: uppercase;
-      font-family: Lato, sans-serif;
-      color: #000000;
-      font-size: 13px;
-      font-weight: 700;
-      line-height: 20px;
-      text-align: left;
-      vertical-align: top;
-      margin-top: -20px; }
-      @media screen and (max-width: 1380px) {
-        .main-top__ingredients-pic p {
-          text-align: center;
-          margin-top: 0; } }
-    .main-top__ingredients-pic .left {
-      text-align: right; }
-      @media screen and (max-width: 1380px) {
-        .main-top__ingredients-pic .left {
-          text-align: center; } }
-    .main-top__ingredients-pic .center {
-      text-align: center; }
-      @media screen and (max-width: 1380px) {
-        .main-top__ingredients-pic .center {
-          text-align: center; } }
-    .main-top__ingredients-pic img {
-      vertical-align: bottom; }
 
 .main-top .main-middle {
   display: inline-block;
@@ -6066,9 +6095,9 @@ footer, header, menu, nav, output {
       max-height: 800px; } }
   .main-top .main-middle__pic {
     display: inline-block;
-    width: 50%;
+    width: 49%;
     height: 468px;
-    margin: 0 auto; }
+    margin-left: 23px; }
     @media screen and (max-width: 1380px) {
       .main-top .main-middle__pic {
         display: block;
@@ -6098,14 +6127,15 @@ footer, header, menu, nav, output {
       display: inline-block;
       width: 100%;
       height: auto;
-      margin-top: 10%; }
+      margin-top: 68px;
+      margin-left: 13px; }
       .main-top .main-middle__switcher-sizeBtn .active {
         opacity: 1;
         outline: none; }
       .main-top .main-middle__switcher-sizeBtn--item {
         display: inline-block;
-        width: 80px;
-        height: 80px;
+        width: 69px;
+        height: 65px;
         background: transparent;
         border-color: transparent;
         opacity: 0.5; }
@@ -6128,9 +6158,8 @@ footer, header, menu, nav, output {
           width: 100%;
           height: 20px;
           color: #000000;
-          font-size: 8.7px;
-          font-weight: 700;
-          text-transform: uppercase; }
+          font-size: 8px;
+          font-weight: 700; }
     .main-top .main-middle__switcher-selectAmount {
       margin: 3% 3% 0 0; }
       .main-top .main-middle__switcher-selectAmount--item {
@@ -6317,7 +6346,7 @@ footer, header, menu, nav, output {
   line-height: 56px;
   text-align: center;
   display: block;
-  margin: 10px  auto;
+  margin: 10px auto;
   border-radius: 30px; }
   .product-slider__price--buyBtn:hover {
     background: #df5029; }
