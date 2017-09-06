@@ -7754,7 +7754,7 @@ footer, header, menu, nav, output {
       width: 100%;
       height: auto;
       margin-top: 68px;
-      margin-left: 13px;
+      margin-left: 12px;
 
       .active {
         opacity: 1;
@@ -7767,7 +7767,13 @@ footer, header, menu, nav, output {
         background: transparent;
         border-color: transparent;
         opacity: 0.5;
-
+        position: relative;
+        &:nth-of-type(2) {
+          margin-left: 14px;
+        }
+        &:nth-of-type(3) {
+          margin-left: 15px;
+        }
         &:hover {
           outline: auto;
           opacity: 0.8;
@@ -7778,27 +7784,32 @@ footer, header, menu, nav, output {
         .size {
           display: inline-block;
           width: 100%;
-          height: 35px;
           font-family: HelveticaNeue, sans-serif;
           color: #000000;
           font-size: 30px;
           font-weight: 700;
+          position: absolute;
+          top: 5px;
+          left: 0;
 
         }
         .description {
           font-family: ArialNarrow, sans-serif;
           display: inline-block;
           width: 100%;
-          height: 20px;
           color: #000000;
           font-size: 8px;
           font-weight: 700;
-
+          position: absolute;
+          bottom: 8px;
+          left: 0;
+          letter-spacing: -0.6px;
         }
       }
     }
     &-selectAmount {
-      margin: 3% 3% 0 0;
+      margin-top: 27px;
+      margin-left: 26px;
       &--item {
         font-family: Lato, sans-serif;
         color: #000101;
@@ -7813,9 +7824,17 @@ footer, header, menu, nav, output {
         width: 68px;
         height: 40px;
         text-align-last: center;
+        background: url("../img/my_page/select_arrow.png") no-repeat;
+        background-position-x: 50px;
+        background-position-y: 17px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
       }
       &--box {
         display: inline-block;
+        margin-left: 7px;
         border-style: solid;
         border-width: 1px;
         border-color: #dcdbda;
@@ -7828,15 +7847,22 @@ footer, header, menu, nav, output {
         font-weight: 400;
         line-height: 24px;
         text-align-last: center;
+        background: url("../img/my_page/select_arrow.png") no-repeat;
+        background-position-x: 122px;
+        background-position-y: 16px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
       }
     }
     &-price {
       display: inline-block;
       width: 100%;
-      margin-top: 8%;
-      margin-left: 3%;
+      margin-top: 38px;
+      margin-left: 25px;
       &--through {
-        display: inline;
+        display: inline-block;
         color: #c0c0c0;
         text-decoration: line-through;
         margin-right: 8px;
@@ -7852,12 +7878,16 @@ footer, header, menu, nav, output {
         }
       }
       &--new {
-        display: inline;
+        display: inline-block;
+        margin-left: 3px;
         font-family: Lato, sans-serif;
         color: #e2623f;
         font-size: 36px;
         font-weight: 700;
         line-height: 30px;
+        span {
+          padding-left: 4px;
+        }
         @media screen and (max-width: 1380px) {
           & {
             display: block;
@@ -7866,13 +7896,14 @@ footer, header, menu, nav, output {
       }
       &--reg {
         display: inline-block;
-
         font-family: Lato, sans-serif;
         color: #000000;
         font-size: 13px;
         font-weight: 300;
         line-height: 18px;
         text-align: left;
+        margin-left: 32px;
+        letter-spacing: 0.4px;
         @media screen and (max-width: 1380px) {
           & {
             display: block;
@@ -7900,6 +7931,8 @@ footer, header, menu, nav, output {
       display: block;
       margin: 10% 0 0 0;
       border-radius: 30px;
+      margin-left: 15px;
+      margin-top: 50px;
       &:hover {
         background: darken(#e2623f, 5);
       }
@@ -7929,10 +7962,10 @@ footer, header, menu, nav, output {
 .main-bottom-story {
   display: block;
   width: 100%;
-  margin-top: 85px;
+  margin-top: 32px;
   &--title {
     display: inline-block;
-    width: 43%;
+    width: 41%;
     font-family: Lato, sans-serif;
     color: #000000;
     font-size: 13px;
@@ -7940,11 +7973,14 @@ footer, header, menu, nav, output {
     text-transform: uppercase;
     line-height: 20px;
     text-align: left;
-    margin-left: 1%;
+    margin-left: 32px;
+    letter-spacing: 0.5px;
   }
   &--subtitle {
     display: inline-block;
     width: 45%;
+    margin-left: 13px;
+    letter-spacing: 0.3px;
     font-family: Lato, sans-serif;
     color: #000000;
     font-size: 13px;
@@ -7962,9 +7998,10 @@ footer, header, menu, nav, output {
   &--slider {
     display: block;
     height: 500px;
-    .slick-dots li button:before {
-      top: -464px;
-      left: 1500px;
+    margin-top: 21px;
+    .slick-dots, .slick-dots li button:before {
+      bottom: 527px;
+      left: 341px;
       @media screen and (max-width: 1900px) {
         & {
           top: -464px;
@@ -7987,28 +8024,44 @@ footer, header, menu, nav, output {
         max-width: 345px;
       }
       .text {
+        margin-top: 25px;
         font-family: Lato, sans-serif;
         color: #000000;
         font-size: 13px;
         font-weight: 300;
         line-height: 20px;
         text-align: left;
-        padding: 5px;
+        padding-left: 32px;
+        padding-right: 85px;
+        letter-spacing: 0.5px;
       }
       .signature {
         font-family: Lato, sans-serif;
         color: #000000;
         font-size: 13px;
-        font-weight: 400;
-        line-height: 15px;
+        font-weight: 700;
+        line-height: 32px;
         text-align: left;
-        padding: 5px;
+        padding-left: 12px;
+        letter-spacing: 0.2px;
         vertical-align: middle;
+        margin-left: 19px;
+        margin-top: 3px;
+        img {
+          display: inline;
+          vertical-align: middle;
+        }
       }
     }
   }
 }
 
+.main-top-product-title {
+  margin-top: 17px;
+}
+.main-top-product-slider{
+  margin-top: -7px;
+}
 .product-slider__price--buyBtn {
 
   width: 193px;
