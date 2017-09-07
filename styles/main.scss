@@ -7305,7 +7305,8 @@ footer, header, menu, nav, output {
           height: 738px;
           background: url("../img/my_page/bg-920.png") #138b89 no-repeat;
           background-size: cover;
-          padding-top: 4%;
+
+          text-align: left;
         }
       }
       img {
@@ -7319,7 +7320,8 @@ footer, header, menu, nav, output {
         }
         @media screen and (max-width: 1380px) {
           & {
-            margin: 0 auto;
+            margin-top: 27px;
+            margin-left: 45px;
           }
         }
       }
@@ -7337,7 +7339,8 @@ footer, header, menu, nav, output {
         }
         @media screen and (max-width: 1380px) {
           & {
-            margin-left: 0;
+            margin-left: 227px;
+            margin-top: -3px;
           }
         }
         li {
@@ -7384,7 +7387,8 @@ footer, header, menu, nav, output {
         }
         @media screen and (max-width: 1380px) {
           & {
-            margin-left: 0;
+            margin-left: 147px;
+
           }
         }
         li {
@@ -7442,8 +7446,9 @@ footer, header, menu, nav, output {
       @media screen and (max-width: 1380px) {
         & {
           width: 100%;
-          padding-left: 2%;
-          margin-top: -10%;
+          padding-left: 2.5%;
+          margin-top: -79px;
+          height: 461px;
         }
       }
 
@@ -7547,12 +7552,15 @@ footer, header, menu, nav, output {
               display: none;
             }
           }
-          @media screen and (max-width: 1380px) {
-            & {
-              color: #282828;
-            }
+        }
+        @media screen and (max-width: 1380px) {
+          & {
+            color: #282828;
+            padding-right: 316px;
+            letter-spacing: 0.2px;
           }
         }
+
       }
       p:last-of-type {
         display: inline-block;
@@ -7597,7 +7605,29 @@ footer, header, menu, nav, output {
     display: none;
     @media screen and (max-width: 1380px) {
       & {
-        display: block;
+        margin-top: 63px;
+        display: inline-block;
+        width: 580px;
+        height: 230px;
+        margin-left: 56px;
+        .slick-prev:before {
+          content: url("../img/my_page/slider/arrow-left.svg");
+        }
+        .slick-next:before {
+          content: url("../img/my_page/slider/arrow-right.svg");
+        }
+        .slick-prev {
+          left: -37px;
+          top: 110px;
+        }
+        .slick-next {
+          right: -19px;
+          top: 110px;
+        }
+        .ing-slider-item {
+          margin: 0 10px;
+        }
+
       }
     }
   }
@@ -7617,6 +7647,20 @@ footer, header, menu, nav, output {
       @media screen and (max-width: 1900px) {
         & {
           display: none;
+          br {
+            display: none;
+          }
+        }
+      }
+      @media screen and (max-width: 1380px) {
+        & {
+          display: inline-block;
+          margin-left: 115px;
+          margin-top: 66px;
+          text-align: center;
+          br {
+            display: inline-block;
+          }
         }
       }
       &_1400 {
@@ -7630,6 +7674,9 @@ footer, header, menu, nav, output {
             width: 1000px;
             letter-spacing: -0.4px;
           }
+        }
+        @media screen and (max-width: 1380px) {
+          display: none;
         }
       }
     }
@@ -7648,6 +7695,17 @@ footer, header, menu, nav, output {
           display: none;
         }
       }
+      @media screen and (max-width: 1380px) {
+        & {
+          display: inline-block;
+          margin-left: 101px;
+          margin-top: 9px;
+          text-align: center;
+          br {
+            display: inline-block;
+          }
+        }
+      }
       &_1400 {
         display: none;
         @media screen and (max-width: 1900px) {
@@ -7657,6 +7715,9 @@ footer, header, menu, nav, output {
             display: inline-block;
           }
         }
+        @media screen and (max-width: 1380px) {
+          display: none;
+        }
       }
 
     }
@@ -7664,6 +7725,12 @@ footer, header, menu, nav, output {
     .ing-slider {
       margin-top: 38px;
       margin-left: 441px;
+      @media screen and (max-width: 1900px) {
+        & {
+          margin-top: 35px;
+          margin-left: 181px;
+        }
+      }
       @media screen and (max-width: 1380px) {
         & {
           display: none;
@@ -7682,12 +7749,6 @@ footer, header, menu, nav, output {
         margin-left: 26px;
       }
 
-      @media screen and (max-width: 1380px) {
-        & {
-          display: block;
-          margin: 0 auto;
-        }
-      }
       img {
         margin: 0 auto;
       }
@@ -7701,7 +7762,16 @@ footer, header, menu, nav, output {
   width: 100%;
   height: 468px;
   margin: 0 auto;
+
   @media screen and (max-width: 1380px) {
+    & {
+      margin-top: 13px;
+      text-align: left;
+      height: 875px;
+
+    }
+  }
+  @media screen and (max-width: 900px) {
     & {
       height: auto;
       max-height: 800px;
@@ -7714,7 +7784,19 @@ footer, header, menu, nav, output {
     width: 49%;
     height: 468px;
     margin-left: 23px;
+    @media screen and (max-width: 1900px) {
+      & {
+        margin-left: 0;
+      }
+    }
     @media screen and (max-width: 1380px) {
+      & {
+        display: inline-block;
+        margin-left: 45px;
+        margin-top: 5px;
+      }
+    }
+    @media screen and (max-width: 900px) {
       & {
         display: block;
         margin: 0 auto;
@@ -7726,6 +7808,13 @@ footer, header, menu, nav, output {
       margin-left: 10%;
       vertical-align: bottom;
       @media screen and (max-width: 1380px) {
+        & {
+
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+      @media screen and (max-width: 900px) {
         & {
 
           margin: 0 auto;
@@ -7742,6 +7831,14 @@ footer, header, menu, nav, output {
     height: 100%;
     vertical-align: bottom;
     @media screen and (max-width: 1380px) {
+      & {
+        display: block;
+        margin-top: -77px;
+        margin-left: 190px;
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 900px) {
       & {
         display: block;
         margin: 0 auto;
@@ -7810,6 +7907,18 @@ footer, header, menu, nav, output {
     &-selectAmount {
       margin-top: 27px;
       margin-left: 26px;
+      @media screen and (max-width: 1900px) {
+        & {
+          margin-left: 16px;
+        }
+      }
+      @media screen and (max-width: 1380px) {
+        & {
+          margin-top: 27px;
+          margin-left: 23px;
+        }
+      }
+
       &--item {
         font-family: Lato, sans-serif;
         color: #000101;
@@ -7831,6 +7940,12 @@ footer, header, menu, nav, output {
         -moz-appearance: none;
         text-indent: 1px;
         text-overflow: '';
+        @media screen and (max-width: 1900px) {
+          & {
+            text-indent: -21px;
+            background-position-x: 45px;
+          }
+        }
       }
       &--box {
         display: inline-block;
@@ -7854,6 +7969,13 @@ footer, header, menu, nav, output {
         -moz-appearance: none;
         text-indent: 1px;
         text-overflow: '';
+        @media screen and (max-width: 1900px) {
+          & {
+            text-indent: -27px;
+            background-position-x: 115px;
+            background-position-y: 16px;
+          }
+        }
       }
     }
     &-price {
@@ -7871,7 +7993,20 @@ footer, header, menu, nav, output {
         font-weight: 700;
         line-height: 30px;
         text-align: center;
+        @media screen and (max-width: 1900px) {
+          & {
+            margin-top: 36px;
+            margin-left: 15px;
+          }
+        }
         @media screen and (max-width: 1380px) {
+          & {
+            display: inline-block;
+            text-align: left;
+            margin-left: 65px;
+          }
+        }
+        @media screen and (max-width: 900px) {
           & {
             display: block;
           }
@@ -7891,6 +8026,14 @@ footer, header, menu, nav, output {
         @media screen and (max-width: 1380px) {
           & {
             display: block;
+            text-align: left;
+            margin-top: 7px;
+            margin-left: 25px;
+          }
+        }
+        @media screen and (max-width: 900px) {
+          & {
+            display: block;
           }
         }
       }
@@ -7905,6 +8048,15 @@ footer, header, menu, nav, output {
         margin-left: 32px;
         letter-spacing: 0.4px;
         @media screen and (max-width: 1380px) {
+          & {
+            display: block;
+
+            margin-top: 10px;
+            margin-left: 44px;
+            letter-spacing: 0.4px;
+          }
+        }
+        @media screen and (max-width: 900px) {
           & {
             display: block;
             text-align: center;
@@ -7936,7 +8088,18 @@ footer, header, menu, nav, output {
       &:hover {
         background: darken(#e2623f, 5);
       }
+      @media screen and (max-width: 1900px) {
+        & {
+          margin-left: 6px;
+        }
+      }
       @media screen and (max-width: 1380px) {
+        & {
+          margin-top: 27px;
+          margin-left: 37px;
+        }
+      }
+      @media screen and (max-width: 900px) {
         & {
           margin: 0 auto;
         }
@@ -7944,19 +8107,6 @@ footer, header, menu, nav, output {
     }
   }
 
-}
-
-.ing-slider2 {
-  display: inline-block;
-  width: 260px;
-  height: 230px;
-  margin: 0 auto;
-  .slick-prev:before {
-    content: url("../img/my_page/slider/arrow-left.svg");
-  }
-  .slick-next:before {
-    content: url("../img/my_page/slider/arrow-right.svg");
-  }
 }
 
 .main-bottom-story {
@@ -7975,6 +8125,12 @@ footer, header, menu, nav, output {
     text-align: left;
     margin-left: 32px;
     letter-spacing: 0.5px;
+    @media screen and (max-width: 1380px) {
+      & {
+        margin-top: 0px;
+        margin-left: 39px;
+      }
+    }
   }
   &--subtitle {
     display: inline-block;
@@ -7999,6 +8155,20 @@ footer, header, menu, nav, output {
     display: block;
     height: 500px;
     margin-top: 21px;
+    @media screen and (max-width: 1900px) {
+      & {
+        margin-top: 16px;
+        height: auto;
+      }
+    }
+    @media screen and (max-width: 1380px) {
+      & {
+        margin-top: 18px;
+        width: 612px;
+        margin-left: 38px;
+      }
+    }
+
     .slick-dots, .slick-dots li button:before {
       bottom: 527px;
       left: 341px;
@@ -8020,8 +8190,27 @@ footer, header, menu, nav, output {
       display: inline-block;
       max-width: 345px;
       height: 500px;
-      img {
+      @media screen and (max-width: 1900px) {
+        & {
+          height: auto;
+        }
+      }
+      @media screen and (max-width: 1380px) {
+        & {
+          width: 300px;
+          max-width: 300px;
+          margin:0 3px;
+        }
+      }
+      &-img {
         max-width: 345px;
+        @media screen and (max-width: 1380px) {
+          & {
+            height: 300px;
+            width: 300px;
+            max-width: 300px;
+          }
+        }
       }
       .text {
         margin-top: 25px;
@@ -8034,6 +8223,14 @@ footer, header, menu, nav, output {
         padding-left: 32px;
         padding-right: 85px;
         letter-spacing: 0.5px;
+        @media screen and (max-width: 1900px) {
+          & {
+            margin-top: 17px;
+            margin-left: 5px;
+            padding-left: 24px;
+            padding-right: 44px;
+          }
+        }
       }
       .signature {
         font-family: Lato, sans-serif;
@@ -8047,6 +8244,12 @@ footer, header, menu, nav, output {
         vertical-align: middle;
         margin-left: 19px;
         margin-top: 3px;
+        @media screen and (max-width: 1900px) {
+          & {
+            margin-left: 18px;
+            margin-top: 3px;
+          }
+        }
         img {
           display: inline;
           vertical-align: middle;
@@ -8059,9 +8262,11 @@ footer, header, menu, nav, output {
 .main-top-product-title {
   margin-top: 17px;
 }
-.main-top-product-slider{
+
+.main-top-product-slider {
   margin-top: -7px;
 }
+
 .product-slider__price--buyBtn {
 
   width: 193px;
