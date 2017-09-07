@@ -9,6 +9,11 @@
     });
 
 
+    $(".btn_nutrition").hover(function (e) {
+        $('.table').css("display", e.type === "mouseenter" ? "block" : "none");
+    });
+
+
     $(function () {
 
         $('.ing-slider2').slick({
@@ -17,7 +22,16 @@
             infinite: true,
             centermode: true,
             arrows: true,
-            slickRemove: 1
+            slickRemove: 1,
+            responsive:[
+                {
+                    breakpoint: 900,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }
+                ]
 
 
         });
@@ -78,7 +92,7 @@
                 //         variableWidth: false
                 //     }
                 // }
-                ]
+            ]
         });
     });
 
