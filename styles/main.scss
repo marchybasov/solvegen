@@ -7275,6 +7275,7 @@ footer, header, menu, nav, output {
       overflow: scroll;
     }
   }
+  position: relative;
 
   &__goods {
     display: block;
@@ -7428,6 +7429,74 @@ footer, header, menu, nav, output {
         }
       }
     }
+
+    .table{
+      position: absolute;
+      top: 290px;
+      z-index: 5;
+      right: 494px;
+      width: 269px;
+      height: 585px;
+      background-color: #ffffff;
+      border: 3px solid black;
+      padding: 11px 13px 8px 25px;
+      .text-bold {
+        font: 700 14px 'HelveticaNeue';
+        color: black;
+      }
+      .text-right {
+        text-align: right;
+      }
+      .hr-line-bold {
+        border: 7px solid black;
+        border-bottom: 0;
+        width: 95%;
+        margin: 0 auto;
+      }
+      .hr-line {
+        border: 1px solid black;
+        margin: 0 auto;
+      }
+      .hr-line-semibold {
+        border: 3px solid black;
+        border-bottom: 0;
+        margin: 0 auto;
+      }
+      .dib {
+        display: inline-block;
+      }
+      .row{
+        position: relative;
+        width: 100%;
+        height: 30px;
+      }
+      .cell-left{
+        position: absolute;
+        left:0 ;
+      }
+      .cell-center{
+        position: absolute;
+        left: 50%;
+      }
+      .cell-right{
+        position: absolute;
+        right: 0;
+      }
+      /*layout-end*/
+      .table {
+
+      }
+       p {
+        margin-top: 0;
+      }
+       p:last-child {
+        margin-bottom: 0;
+      }
+      ._title {
+        font: 700 34px 'HelveticaNeue';
+      }
+    }
+
     &-right {
       width: 49%;
       height: 100%;
@@ -7436,6 +7505,8 @@ footer, header, menu, nav, output {
       vertical-align: top;
       padding-left: 50px;
       overflow: hidden;
+      position: relative;
+
 
       @media screen and (max-width: 1900px) {
         & {
@@ -7471,6 +7542,8 @@ footer, header, menu, nav, output {
         @media screen and (max-width: 1380px) {
           & {
             color: #282828;
+            margin-top: 100px;
+            margin-left: 21px;
           }
         }
         &-bold {
@@ -7556,7 +7629,7 @@ footer, header, menu, nav, output {
         @media screen and (max-width: 1380px) {
           & {
             color: #282828;
-            padding-right: 316px;
+            padding-right: 14.5%;
             letter-spacing: 0.2px;
           }
         }
@@ -7644,12 +7717,13 @@ footer, header, menu, nav, output {
       text-align: left;
       margin-top: 97px;
       margin-left: 567px;
+      br {
+        display: none;
+      }
       @media screen and (max-width: 1900px) {
         & {
           display: none;
-          br {
-            display: none;
-          }
+
         }
       }
       @media screen and (max-width: 1380px) {
@@ -7690,6 +7764,9 @@ footer, header, menu, nav, output {
       margin-top: 20px;
       margin-left: 647px;
       letter-spacing: 0.35px;
+      br {
+        display: none;
+      }
       @media screen and (max-width: 1900px) {
         & {
           display: none;
@@ -7807,13 +7884,6 @@ footer, header, menu, nav, output {
     img {
       margin-left: 10%;
       vertical-align: bottom;
-      @media screen and (max-width: 1380px) {
-        & {
-
-          max-width: 100%;
-          max-height: 100%;
-        }
-      }
       @media screen and (max-width: 900px) {
         & {
 
@@ -7852,6 +7922,11 @@ footer, header, menu, nav, output {
       height: auto;
       margin-top: 68px;
       margin-left: 12px;
+      @media screen and (max-width: 1900px) {
+        & {
+          margin-left: 0;
+        }
+      }
 
       .active {
         opacity: 1;
@@ -7995,8 +8070,7 @@ footer, header, menu, nav, output {
         text-align: center;
         @media screen and (max-width: 1900px) {
           & {
-            margin-top: 36px;
-            margin-left: 15px;
+            display: none;
           }
         }
         @media screen and (max-width: 1380px) {
@@ -8011,7 +8085,27 @@ footer, header, menu, nav, output {
             display: block;
           }
         }
+        &__1400 {
+          display: none;
+          @media screen and (max-width: 1900px) {
+            & {
+              display: inline-block;
+              color: black;
+              text-decoration: none;
+              margin-left: -12px;
+              span {
+                padding-left: 0;
+              }
+            }
+          }
+          @media screen and (max-width: 1380px) {
+            & {
+              display: none;
+            }
+          }
+        }
       }
+
       &--new {
         display: inline-block;
         margin-left: 3px;
@@ -8022,6 +8116,11 @@ footer, header, menu, nav, output {
         line-height: 30px;
         span {
           padding-left: 4px;
+        }
+        @media screen and (max-width: 1900px) {
+          & {
+            display: none;
+          }
         }
         @media screen and (max-width: 1380px) {
           & {
@@ -8036,6 +8135,25 @@ footer, header, menu, nav, output {
             display: block;
           }
         }
+        &__1400 {
+          display: none;
+          @media screen and (max-width: 1900px) {
+            & {
+              display: block;
+              margin-top: 3px;
+              margin-left: -3px;
+              font-size: 13px;
+              span {
+                padding-left: 3px;
+              }
+            }
+          }
+          @media screen and (max-width: 1380px) {
+            & {
+              display: none;
+            }
+          }
+        }
       }
       &--reg {
         display: inline-block;
@@ -8047,6 +8165,12 @@ footer, header, menu, nav, output {
         text-align: left;
         margin-left: 32px;
         letter-spacing: 0.4px;
+        @media screen and (max-width: 1900px) {
+          & {
+            display: none;
+          }
+        }
+
         @media screen and (max-width: 1380px) {
           & {
             display: block;
@@ -8062,8 +8186,22 @@ footer, header, menu, nav, output {
             text-align: center;
           }
         }
+        &__1400 {
+          display: none;
+          @media screen and (max-width: 1900px) {
+            & {
+              display: inline-block;
+              margin-left: 9px;
+              letter-spacing: 0.4px
+            }
+          }
+          @media screen and (max-width: 1380px) {
+            & {
+              display: none;
+            }
+          }
+        }
       }
-
     }
     &--buyBtn {
       width: 193px;
@@ -8090,11 +8228,12 @@ footer, header, menu, nav, output {
       }
       @media screen and (max-width: 1900px) {
         & {
-          margin-left: 6px;
+          display: none;
         }
       }
       @media screen and (max-width: 1380px) {
         & {
+          display: block;
           margin-top: 27px;
           margin-left: 37px;
         }
@@ -8104,7 +8243,24 @@ footer, header, menu, nav, output {
           margin: 0 auto;
         }
       }
+      &__1400 {
+        display: none;
+        @media screen and (max-width: 1900px) {
+          & {
+            display: block;
+            margin-top: 5px;
+          }
+        }
+        @media screen and (max-width: 1380px) {
+          & {
+            display: none;
+            margin-top: 17px;
+            margin-left: 4px;
+          }
+        }
+      }
     }
+
   }
 
 }
@@ -8199,7 +8355,7 @@ footer, header, menu, nav, output {
         & {
           width: 300px;
           max-width: 300px;
-          margin:0 3px;
+          margin: 0 3px;
         }
       }
       &-img {
@@ -8259,12 +8415,16 @@ footer, header, menu, nav, output {
   }
 }
 
+.main-top__product {
+  height: 800px;
+}
+
 .main-top-product-title {
   margin-top: 17px;
 }
 
 .main-top-product-slider {
-  margin-top: -7px;
+  margin-top: 0;
 }
 
 .product-slider__price--buyBtn {

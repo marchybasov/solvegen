@@ -33,15 +33,15 @@
             dots: true,
 
             responsive: [
-                // {
-                //     breakpoint: 1920,
-                //     settings: {
-                //         slidesToShow: 2,
-                //
-                //
-                //         slidesToScroll: 1
-                //     }
-                // },
+                {
+                    breakpoint: 1920,
+                    settings: {
+                        slidesToShow: 4,
+
+
+                        slidesToScroll: 1
+                    }
+                },
                 {
                     breakpoint: 1380,
                     settings: {
